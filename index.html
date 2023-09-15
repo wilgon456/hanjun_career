@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hanjun_Career</title>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="./jquery.fullpage/jquery-3.7.1.min.js"></script>
-    <script src="./jquery.fullpage/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="./jquery.fullpage/jquery.fullPage.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1 class="mainlogo">HanJun.</h1>
-        <p class="mainContact">010-3176-1853 / juncatz1945@gmail.com</p>
-    </header>
-    <div id="fullpage">
-        <div class="section">Some section1</div>
-        <div class="section">Some section2</div>
-        <div class="section">Some section3</div>
-        <div class="section">Some section4</div>
-    </div>
-    <script type="text/javascript">
-        $(document).ready(function() {
-        $('#fullpage').fullpage({
-            navigation: true,
-            navigationPosition: 'right',
-            navigationTooltips: ['Section 1', 'Section 2', 'Section 3', 'Section 4'],
-        });
-    });
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hanjun Portfolio</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">HanJun</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="https://my.surfit.io/w/152313471" target="_blank"><i class="fa-solid fa-image-portrait fa-xl"></i></a></li>
+          <li><a href="https://blog.naver.com/uds2001" target="_blank"><i class="fa-brands fa-blogger fa-xl"></i></a></li>
+          <li><a href="https://github.com/wilgon456" target="_blank"><i class="fa-brands fa-square-github fa-xl"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">Hello</p>
+          <h1 class="title">
+            I'm <span>HanJun<br />a</span> Product Manager
+          </h1>
+          <p class="description">
+            새로운 도전과 모험을 사랑하는 7년차 기획자 유한준입니다. 자회사 초기멤버 및 스타트업 설립멤버로 참여하여 15억 이상의 매출규모를 만들어보았습니다. 새로운 전략과 실행에 대한 경험을 다수 보유하고 있습니다. XR 환경을 기반한 웹/앱 개발 총괄을 맡았으며 특히 R&D를 통한 새로운 기술 개발 경험이 많습니다. 오늘보다 내일 더 성장하는 기획자가 되기위해 노력하고 있습니다.  
+          </p>
+          <div class="action__btns">
+            <button class="hire__me" onclick="window.open('https://hanjun.notion.site/Hanjun_Resume-d12526afeb7c4cb4b6b01df5e6c60b50?pvs=4')">Resume</button>
+            <button class="portfolio" onclick="window.open('https://hanjun.notion.site/Hanjun_Portfolio-34fe169e4cd34c509d09f96210f9f369?pvs=4')">Portfolio</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./src/my.jpeg" alt="profile" />
+        </div>
+      </div>
+    </section>
+    <script src="https://kit.fontawesome.com/ab659ab506.js" crossorigin="anonymous"></script>
+  </body>
 </html>
